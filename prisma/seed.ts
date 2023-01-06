@@ -6,14 +6,14 @@ async function main() {
   const user = await prisma.user.create({
     data: {      
       name: 'Jhon Doe',
-      email: 'john.doe@gmail.com',
+      email: 'john.doe2@gmail.com',
       avatarUrl: 'https://github.com/josealves380.png',
     }
   })
   const pool = await prisma.pool.create({
     data: {
       title: 'Example',
-      code: 'JOSE12',
+      code: 'JOS113',
       ownerId: user.id,
 
       participants: {
